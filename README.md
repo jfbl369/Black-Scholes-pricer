@@ -1,14 +1,18 @@
-# Black-Scholes Pricer with Greeks
+# Black-Scholes Pricer with Greeks Visualisation
 
-## 📚 Description
+## Application en ligne
+[Application Streamlit](https://jfbl369-black-scholes-pricer.streamlit.app)
+
+
+## Description
 Application Streamlit pour calculer le prix d'une option européenne (call/put) avec le modèle de Black-Scholes et visualiser ses Greeks (Delta, Gamma, Vega, Theta, Rho).
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 - Calcul du prix de l'option
 - Calcul des Greeks
 - Visualisation dynamique en fonction du prix du sous-jacent
 - Interface interactive (sliders)
 
-## 🛠️ Installation
+## Installation
 ```bash
 pip install -r requirements.txt
