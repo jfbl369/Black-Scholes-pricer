@@ -1,4 +1,8 @@
-# Black-Scholes Pricer with Greeks Visualisation
+# Black-Scholes Pricer avec visualisation des grecques
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Application en ligne
 [Application Streamlit](https://jfbl369-black-scholes-pricer.streamlit.app)
