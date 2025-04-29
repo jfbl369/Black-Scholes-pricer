@@ -1,13 +1,5 @@
----FILEPATH /requirements.txt
----FIND
-```
-```
----REPLACE
-```
 numpy
 scipy
 matplotlib
 streamlit
 pytest
-```
----COMPLETE
