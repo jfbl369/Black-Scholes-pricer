@@ -6,6 +6,8 @@
 
 ## Application en ligne
 [Application Streamlit](https://black-scholes-pricer-jqyeh8vkpjmkl8kcp5hdvn.streamlit.app/)
+<a href="https://black-scholes-pricer-jqyeh8vkpjmkl8kcp5hdvn.streamlit.app/" target="_blank">Application Streamlit</a>
+
 
 
 
