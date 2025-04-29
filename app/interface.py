@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-from app.pricing import black_scholes_price, black_scholes_greeks
+from pricing import black_scholes_price, black_scholes_greeks
 
 st.title("🧮 Black-Scholes Pricer avec Visualisation des Greeks")
 
