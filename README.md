@@ -1,11 +1,11 @@
-# Black-Scholes Pricer avec visualisation des grecques
+# Black-Scholes Pricer avec visuels des grecques
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Application en ligne
-<a href="https://black-scholes-pricer-jqyeh8vkpjmkl8kcp5hdvn.streamlit.app/" target="_blank">Application Streamlit</a>
+[Application Streamlit](https://black-scholes-pricer-jqyeh8vkpjmkl8kcp5hdvn.streamlit.app/)
 
 
 
