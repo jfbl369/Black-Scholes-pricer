@@ -48,9 +48,18 @@ def calc_d1_d2(S, K, T, r, sigma):
     d2 = d1 - sigma * np.sqrt(T)
     return d1, d2
 
-
-
-
+def create_styled_plot(x, y, title, color):
+    fig, ax = plt.subplots(figsize=(3.5, 2.3), facecolor="#0f1117")
+    ax.plot(x, y, color=color, linewidth=1.5)
+    #ax.set_title(title, fontsize=10, color="white")
+    #ax.set_xlabel("S", fontsize=8, color="white")
+    #ax.set_ylabel(title, fontsize=8, color="white")
+    ax.tick_params(colors="white", labelsize=7)
+    ax.grid(True, linestyle='--', linewidth=0.5, color="#444444")
+    fig.patch.set_facecolor("#0f1117")
+    ax.set_facecolor("#0f1117")
+    fig.tight_layout()
+    return fig
 
 def make_greek_plot(S_range, func, *args):
     return [func(s, *args) for s in S_range]
@@ -94,23 +103,6 @@ col6.markdown(f"<div class='orange-code' style='text-align:center; font-size:16p
 # =======================
 S_range = np.linspace(0.5 * K, 1.5 * K, 100)
 
-
-
-
-def create_styled_plot(x, y, title, color, x_marker=None, y_marker=None):
-    fig, ax = plt.subplots(figsize=(3.5, 2.3))
-    ax.plot(x, y, linewidth=1.5, color=color)
-
-    if x_marker is not None and y_marker is not None:
-        ax.scatter(x_marker, y_marker, color="white", s=60, marker="o", linewidths=1., zorder=5)
-
-
-    ax.tick_params(axis='both', labelsize=7, colors="white")
-    ax.grid(True, linestyle='--', linewidth=0.5, color="#666666")
-    fig.patch.set_facecolor("#0f1117")
-    ax.set_facecolor("#0f1117")
-    return fig
-
 # =======================
 # 📦 CALCUL DELTA
 # =======================
@@ -132,7 +124,7 @@ st.markdown("<div class='greek-title'>Delta</div>", unsafe_allow_html=True)
 col1, col2 = st.columns([1.2, 1.8])
 
 with col1:
-    st.pyplot(create_styled_plot(S_range, delta_curve, "Delta", "orange", S, delta))
+    st.pyplot(create_styled_plot(S_range, delta_curve, "Delta", "blue"))
 
 with col2:
     toggle = st.radio("Afficher :", ["Formules mathématiques", "Code Python"],
@@ -163,7 +155,7 @@ st.markdown("<div class='greek-title'>Gamma</div>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([1.2, 1.8])
 with col1:
-    st.pyplot(create_styled_plot(S_range, gammas, "Gamma", "red", S, gamma))
+    st.pyplot(create_styled_plot(S_range, gammas, "Gamma", "blue"))
 
 with col2:
     toggle = st.radio("Afficher :", ["Formules mathématiques", "Code Python"], horizontal=True, label_visibility="collapsed", key="gamma")
@@ -189,7 +181,7 @@ st.markdown("<div class='greek-title'>Vega</div>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([1.2, 1.8])
 with col1:
-    st.pyplot(create_styled_plot(S_range, vegas, "Vega", "magenta", S, vega))
+    st.pyplot(create_styled_plot(S_range, vegas, "Vega", "blue"))
 
 with col2:
     toggle = st.radio("Afficher :", ["Formules mathématiques", "Code Python"], horizontal=True, label_visibility="collapsed", key="vega")
@@ -217,7 +209,7 @@ st.markdown("<div class='greek-title'>Theta</div>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([1.2, 1.8])
 with col1:
-    st.pyplot(create_styled_plot(S_range, thetas, "Theta", "blue", S, theta))
+    st.pyplot(create_styled_plot(S_range, thetas, "Theta", "blue"))
 
 with col2:
     toggle = st.radio("Afficher :", ["Formules mathématiques", "Code Python"], horizontal=True, label_visibility="collapsed", key="theta")
@@ -245,7 +237,7 @@ st.markdown("<div class='greek-title'>Rho</div>", unsafe_allow_html=True)
 
 col1, col2 = st.columns([1.2, 1.8])
 with col1:
-    st.pyplot(create_styled_plot(S_range, rhos, "Rho", "green", S, rho))
+    st.pyplot(create_styled_plot(S_range, rhos, "Rho", "blue"))
 
 with col2:
     toggle = st.radio("Afficher :", ["Formules mathématiques", "Code Python"], horizontal=True, label_visibility="collapsed", key="rho")
