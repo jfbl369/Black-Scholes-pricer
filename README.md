@@ -22,6 +22,7 @@ Application Streamlit pour calculer le prix d'une option européenne (call/put) 
 ## Installation
 ```bash
 pip install -r requirements.txt
+```
 
 ## Documents
 [Four Derivations of the Black Scholes PDE](https://frouah.com/finance%20notes/Black%20Scholes%20PDE.pdf)
