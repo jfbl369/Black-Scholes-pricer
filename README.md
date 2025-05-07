@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Application en ligne
-[Application Streamlit](https://black-scholes-pricer-jqyeh8vkpjmkl8kcp5hdvn.streamlit.app/)
+[Black-Shcoles Pricer](https://black-scholes-pricer-jqyeh8vkpjmkl8kcp5hdvn.streamlit.app/)
 
 
 
