@@ -18,6 +18,7 @@ Application Streamlit pour calculer le prix d'une option européenne (call/put) 
 - Calcul des Greeks
 - Visualisation dynamique en fonction du prix du sous-jacent
 - Interface interactive (sliders)
+- Affichage du code et des formules mathématiques associées
 
 ## Installation
 ```bash
